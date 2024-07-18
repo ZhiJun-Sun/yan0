@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sunzj.spring.mapper.StudentMapper">
+<update id="update">
+    UPDATE student
+    <set>
+        <if test="name !=null">
+            name=#{name},
+        </if>
+        <if test="age !=null">
+            age=#{age},
+        </if>
+        <if test="sex !=null">
+            sex=#{sex},
+        </if>
+        <if test="classname !=null">
+            classname=#{classname},
+        </if>
+        <if test="phone !=null">
+            phone=#{phone},
+        </if>
+        <if test="address !=null">
+            address=#{address},
+        </if>
+        <if test="favourite !=null">
+            favourite=#{favourite}
+        </if>
+    </set>
+    <where>
+        id=#{id}
+    </where>
+</update>
+</mapper>

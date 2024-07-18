@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Pacifico'; /* 重命名字体名 */
+    src: url('Pacifico-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ArchivoBlack'; /* 重命名字体名 */
+    src: url('ArchivoBlack-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaveatBrush'; /* 重命名字体名 */
+    src: url('CaveatBrush-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaveatBold'; /* 重命名字体名 */
+    src: url('Caveat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
