@@ -4,7 +4,7 @@ import StudentTable from "@/components/StudentTable";
 import GradeTable from "@/components/GradeTable";
 import CourseTable from "@/components/CourseTable";
 import BarChart from "@/components/BarChart";
-import ChoseTopTable from "@/components/ChoseTopTable"
+import GradeShow from '@/components/GradeShow.vue';
 const routes=[
     {
         path:'/',
@@ -27,13 +27,14 @@ const routes=[
                 component: CourseTable
             },
             {
-                path:'BarChart',
-                component: BarChart
+                 path:'GradeShow',
+                 component:GradeShow
             },
             {
-                path:'ChoseTopTable',
-                component: ChoseTopTable
+                path:'BarChart',
+                component: BarChart
             }
+     
         ]
     },
 ]

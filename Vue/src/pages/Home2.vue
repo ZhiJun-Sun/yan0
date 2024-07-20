@@ -87,7 +87,7 @@
             },
             BarManage(){
                 router.push('/BarChart')
-            },
+            }
         }
     }
 </script>

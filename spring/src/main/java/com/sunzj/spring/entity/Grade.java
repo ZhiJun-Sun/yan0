@@ -18,4 +18,10 @@ public class Grade {
 
     private Integer score;
 
+
+    @TableField(exist = false)
+    private String name;
+    @TableField(exist = false)
+    private String courseName;
+
 }

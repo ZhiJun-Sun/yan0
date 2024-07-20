@@ -23,23 +23,25 @@
                             <el-icon><camera/></el-icon>
                             <span>课程管理</span>
                         </el-menu-item>
-                        <el-menu-item index="3" @click="gradeManage">
+
+                        <el-menu-item index="3" @click="gradeShow">
                             <i class="el-icon-setting"></i>
                             <el-icon><document /></el-icon>
                             <span>成绩管理</span>
                         </el-menu-item>
 
-                        <el-menu-item index="4" @click="BarChart">
+                        <el-menu-item index="4" @click="gradeManage">
+                            <i class="el-icon-setting"></i>
+                            <el-icon><document /></el-icon>
+                            <span>成绩列优</span>
+                        </el-menu-item>
+
+                        <el-menu-item index="5" @click="BarChart">
                             <i class="el-icon-setting"></i>
                             <el-icon><document /></el-icon>
                             <span>选课情况</span>
                         </el-menu-item>
 
-                        <el-menu-item index="5" @click="ChoseTopTable">
-                            <i class="el-icon-setting"></i>
-                            <el-icon><document /></el-icon>
-                            <span>优秀学生情况</span>
-                        </el-menu-item>
         </el-menu>
       </el-aside>
   
@@ -80,12 +82,13 @@
             gradeManage(){
                 router.push('/gradeManage')
             },
+            gradeShow(){
+                router.push('/gradeShow')
+            },
             BarChart(){
                 router.push('/BarChart')
             },
-            ChoseTopTable(){
-              router.push('/ChoseTopTable')
-            }
+
     }
   }
   </script>
